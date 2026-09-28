@@ -1,0 +1,501 @@
+id,query
+1,What is the delivery commitment window for Platinum Express domestic shipments?
+2,How often are tracking updates provided under the Gold Standard tier?
+3,What is the delay tolerance for Standard Economy shipments?
+4,What compensation is offered for a 24-hour delay block under Platinum Express?
+5,What is the cut-off time for Mumbai to Hamburg shipments?
+6,How many transit days does Gold tier take from Delhi to New York?
+7,What is the standard clearance time for UAE customs?
+8,How long does US customs clearance normally take?
+9,What is the filing window for claims after committed delivery date?
+10,What is the response SLA for the Escalation Manager on Platinum shipments?
+11,What is the import duty on smartphones under HS code 8517.12?
+12,What is the export duty on wheat?
+13,Is Penicillin classified as a restricted item?
+14,What HS code covers laptops and portable computers?
+15,What is the import duty percentage for green tea?
+16,What certification is required for waterproof footwear import?
+17,What is the de minimis threshold for import under Indian customs?
+18,What UN number is assigned to hydrogen gas?
+19,What is the penalty range for intentional HS code misdeclaration?
+20,What is the duty calculation basis for imports?
+21,What is a Category 1 minor delay defined as?
+22,What is the compensation for a Category 4 critical delay?
+23,What is the reason code DLY-06 in the delay policy?
+24,Does DLY-08 pause the SLA clock?
+25,What is the maximum acceptable delay for perishable goods?
+26,Who must approve a shipment cancellation?
+27,What is the refund cap an autonomous agent can apply per shipment?
+28,What phone number is listed for the Medical Supplies Desk?
+29,How many shipments can be cancelled in a 10-minute window without authorization?
+30,When are monthly SLA performance reports shared with Platinum customers?
+31,Who was Roshan Nama's industry mentor at Pratham Software?
+32,What is the duration of Roshan's internship at Pratham Software?
+33,Which embedding model dimension size was used in the resume analyzer?
+34,What chunk size and overlap were used for resume text splitting?
+35,Which vector database did Roshan use across his projects?
+36,What framework was used to build the Book Store Management System?
+37,What four RAGAS metrics are mentioned in the report?
+38,What is LangGraph used for according to the report?
+39,What LLM provider was used for response generation in the RAG chatbot?
+40,What is Roshan Nama's CGPA at NIT Jaipur?
+41,What is Roshan Nama's phone number?
+42,What position did Roshan hold at Echelon Robotics Club?
+43,What placement did Roshan achieve in the SKIT Project Expo?
+44,What technologies were used in the Demand Forecasting project?
+45,What percentage did Roshan score in class 12?
+46,What accuracy did the Banking Risk Assessment model achieve?
+47,Which LLM API was used in the Enterprise RAG Assistant project?
+48,Compare the delay tolerance thresholds of Platinum Express and Gold Standard tiers.
+49,How does the compensation structure differ between Platinum and Standard Economy?
+50,"Compare tracking update frequency across Platinum, Gold, and Standard tiers."
+51,Compare transit times for Mumbai to Singapore versus Mumbai to Dubai across all tiers.
+52,"Compare customs clearance times between EU, US, and Singapore."
+53,Compare import duty rates for smartphones versus laptops.
+54,Compare the restricted status of pharmaceuticals versus textiles.
+55,Compare export duty treatment for wheat versus rice.
+56,Compare import duties on coffee versus green tea.
+57,Compare documentation requirements for hazmat shipments versus standard international shipments.
+58,Compare Category 2 and Category 3 delays in terms of agent action required.
+59,Compare autonomous versus human-approval-required actions in the delay policy.
+60,Compare compensation entitlement for weather-related delays versus carrier capacity shortages.
+61,Compare handling of perishable goods versus pharmaceutical shipments.
+62,Compare the notification obligations for Category 1 versus Category 4 delays.
+63,Compare the Book Store Management System project with the AI Resume Analyzer in terms of complexity.
+64,Compare hybrid retrieval approaches used in the RAG chatbot versus the resume analyzer.
+65,Compare OLTP and OLAP as described in the internship report.
+66,Compare star schema and snowflake schema trade-offs mentioned in the report.
+67,Compare ETL and ELT pipeline approaches described in the report.
+68,Compare the two resume versions in terms of listed technical skills.
+69,Compare the projects listed in Roshan's Pratham-era resume versus his earlier resume.
+70,Compare authentication mechanisms mentioned across the internship report and resume.
+71,"If a Platinum shipment from Mumbai to Hamburg is delayed 30 hours due to port congestion, what compensation and options apply?"
+72,How do customs hold delays interact with SLA clock pausing and compensation eligibility?
+73,What happens if a hazmat shipment with an incorrect HS code is delayed at customs?
+74,"For a Gold tier shipment from Delhi to London delayed by strike action, what SLA and compensation rules apply?"
+75,How would a Force Majeure event affect both SLA timing and delay-reason-code compensation rules?
+76,"If a shipment carrying medicaments is delayed for inspection, what customs and delay-policy rules both apply?"
+77,"Explain how Roshan's use of Pinecone connects his RAG chatbot, resume analyzer, and research workspace projects."
+78,How did Roshan's understanding of database normalization influence his resume-analyzer data design?
+79,Trace how LangGraph was used differently in the multi-agent research workspace versus earlier RAG projects.
+80,How do Roshan's FastAPI learnings from Project 1 carry over into his later RAG projects?
+81,"What is the relationship between hybrid retrieval, re-ranking, and RAGAS evaluation in his RAG chatbot?"
+82,How does the internship report's account of Roshan's resume analyzer align with what's listed on his resume?
+83,"Considering both his resume and the report, what skills evolved between his earlier and later projects?"
+84,"If a Platinum pharmaceutical shipment is delayed 3 hours, which policy governs the response — the SLA tiers or the special-handling rules?"
+85,How does the Pre-clearance Programme in the SLA interact with standard customs clearance times in the tariff reference?
+86,Explain why the Platinum tier has stricter notification requirements than Standard Economy.
+87,Why might a shipper choose Gold Standard over Platinum Express?
+88,Why do international routes require additional customs clearance days beyond transit time?
+89,Why is a Certificate of Origin important for preferential tariff treatment?
+90,Why would chemical and pharmaceutical shipments be more likely to face physical inspection?
+91,Why does the de minimis threshold exist for low-value imports?
+92,Why is it risky to rely solely on user thumbs-up feedback for training a retrieval router?
+93,Why did Roshan's mentor discourage jumping straight into LangChain before learning FastAPI fundamentals?
+94,Why is a two-stage chunking strategy (structural then recursive) preferred for markdown documentation?
+95,Why can't different embedding models be mixed within the same vectorstore index?
+96,Why does the delay policy require human approval for refunds above a certain amount?
+97,Why is bulk cancellation limited to 3 shipments per 10-minute window?
+98,Why might separating authentication from authorization prevent security bugs?
+99,Explain the reasoning behind treating time-sensitive legal documents as Platinum tier regardless of stated service level.
+100,Why would an MCP tool description need to be written differently than a traditional API's documentation?
+101,Summarize the entire Force Majeure and Exclusions section of the SLA.
+102,What does the claims process section of the SLA cover end to end?
+103,Summarize the documentation requirements section for international shipments.
+104,Describe everything covered under the Pre-clearance Programme section.
+105,What information is contained in Section A (Electronics & Technology) of the tariff reference?
+106,Summarize the Dangerous Goods (Hazmat) section of the tariff reference.
+107,What does the Commonly Asked Questions section of the tariff reference address?
+108,Summarize the entire delay classification framework (Categories 1 through 4).
+109,What does the Autonomous Agent Decision Rules section allow versus restrict?
+110,Summarize the Priority Shipments special handling section in full.
+111,"Describe the full communication standards section, including notification templates."
+112,Summarize Section 6 of the internship report on the Advanced RAG Chatbot project end-to-end.
+113,"Summarize the entire Multi-Agent Systems, MCPs and LangGraph section of the report."
+114,Describe everything covered in the AI Personal Research Workspace capstone section.
+115,Summarize the Learnings and Challenges section of the internship report.
+116,Summarize the Database Design and Data Engineering Fundamentals section as a whole.
+117,What does the Skills Developed daily task log section reveal about the internship's progression?
+118,Summarize the full list of projects on Roshan's Pratham-era resume.
+119,Summarize the full list of projects on Roshan's earlier resume.
+120,How many days does the Platinum tier take from Mumbai to Delhi?
+121,What is the cut-off time (IST) for shipments from Mumbai to Delhi?
+122,Compare Platinum and Standard transit times for the Mumbai to Delhi route.
+123,"If a Standard tier shipment on the Mumbai to Delhi route is delayed 50 hours, what compensation and options apply?"
+124,Why might a shipper pick Gold over Platinum for the Mumbai to Delhi route given the cut-off time of 14:00 IST?
+125,Summarize everything the SLA specifies for the Mumbai to Delhi trade lane.
+126,How many days does the Platinum tier take from Mumbai to Chennai?
+127,What is the cut-off time (IST) for shipments from Mumbai to Chennai?
+128,Compare Platinum and Standard transit times for the Mumbai to Chennai route.
+129,"If a Standard tier shipment on the Mumbai to Chennai route is delayed 50 hours, what compensation and options apply?"
+130,Why might a shipper pick Gold over Platinum for the Mumbai to Chennai route given the cut-off time of 14:00 IST?
+131,Summarize everything the SLA specifies for the Mumbai to Chennai trade lane.
+132,How many days does the Platinum tier take from Mumbai to Hamburg?
+133,What is the cut-off time (IST) for shipments from Mumbai to Hamburg?
+134,Compare Platinum and Standard transit times for the Mumbai to Hamburg route.
+135,"If a Standard tier shipment on the Mumbai to Hamburg route is delayed 50 hours, what compensation and options apply?"
+136,Why might a shipper pick Gold over Platinum for the Mumbai to Hamburg route given the cut-off time of 10:00 IST?
+137,Summarize everything the SLA specifies for the Mumbai to Hamburg trade lane.
+138,How many days does the Platinum tier take from Mumbai to Dubai?
+139,What is the cut-off time (IST) for shipments from Mumbai to Dubai?
+140,Compare Platinum and Standard transit times for the Mumbai to Dubai route.
+141,"If a Standard tier shipment on the Mumbai to Dubai route is delayed 50 hours, what compensation and options apply?"
+142,Why might a shipper pick Gold over Platinum for the Mumbai to Dubai route given the cut-off time of 12:00 IST?
+143,Summarize everything the SLA specifies for the Mumbai to Dubai trade lane.
+144,How many days does the Platinum tier take from Mumbai to Singapore?
+145,What is the cut-off time (IST) for shipments from Mumbai to Singapore?
+146,Compare Platinum and Standard transit times for the Mumbai to Singapore route.
+147,"If a Standard tier shipment on the Mumbai to Singapore route is delayed 50 hours, what compensation and options apply?"
+148,Why might a shipper pick Gold over Platinum for the Mumbai to Singapore route given the cut-off time of 11:00 IST?
+149,Summarize everything the SLA specifies for the Mumbai to Singapore trade lane.
+150,How many days does the Platinum tier take from Delhi to London?
+151,What is the cut-off time (IST) for shipments from Delhi to London?
+152,Compare Platinum and Standard transit times for the Delhi to London route.
+153,"If a Standard tier shipment on the Delhi to London route is delayed 50 hours, what compensation and options apply?"
+154,Why might a shipper pick Gold over Platinum for the Delhi to London route given the cut-off time of 09:00 IST?
+155,Summarize everything the SLA specifies for the Delhi to London trade lane.
+156,How many days does the Platinum tier take from Delhi to New York?
+157,What is the cut-off time (IST) for shipments from Delhi to New York?
+158,Compare Platinum and Standard transit times for the Delhi to New York route.
+159,"If a Standard tier shipment on the Delhi to New York route is delayed 50 hours, what compensation and options apply?"
+160,Why might a shipper pick Gold over Platinum for the Delhi to New York route given the cut-off time of 09:00 IST?
+161,Summarize everything the SLA specifies for the Delhi to New York trade lane.
+162,How many days does the Platinum tier take from Chennai to Tokyo?
+163,What is the cut-off time (IST) for shipments from Chennai to Tokyo?
+164,Compare Platinum and Standard transit times for the Chennai to Tokyo route.
+165,"If a Standard tier shipment on the Chennai to Tokyo route is delayed 50 hours, what compensation and options apply?"
+166,Why might a shipper pick Gold over Platinum for the Chennai to Tokyo route given the cut-off time of 11:00 IST?
+167,Summarize everything the SLA specifies for the Chennai to Tokyo trade lane.
+168,How many days does the Platinum tier take from Bangalore to Sydney?
+169,What is the cut-off time (IST) for shipments from Bangalore to Sydney?
+170,Compare Platinum and Standard transit times for the Bangalore to Sydney route.
+171,"If a Standard tier shipment on the Bangalore to Sydney route is delayed 50 hours, what compensation and options apply?"
+172,Why might a shipper pick Gold over Platinum for the Bangalore to Sydney route given the cut-off time of 10:00 IST?
+173,Summarize everything the SLA specifies for the Bangalore to Sydney trade lane.
+174,How many days does the Platinum tier take from Kolkata to Rotterdam?
+175,What is the cut-off time (IST) for shipments from Kolkata to Rotterdam?
+176,Compare Platinum and Standard transit times for the Kolkata to Rotterdam route.
+177,"If a Standard tier shipment on the Kolkata to Rotterdam route is delayed 50 hours, what compensation and options apply?"
+178,Why might a shipper pick Gold over Platinum for the Kolkata to Rotterdam route given the cut-off time of 08:00 IST?
+179,Summarize everything the SLA specifies for the Kolkata to Rotterdam trade lane.
+180,What is the import duty for laptops and portable computers (HS code 8471.30)?
+181,What special notes or requirements apply to laptops and portable computers?
+182,Compare the duty and restriction status of laptops and portable computers against related items in the same tariff section.
+183,Why might laptops and portable computers require the compliance notes listed in the tariff reference?
+184,What is the import duty for mobile phones (HS code 8517.12)?
+185,What special notes or requirements apply to mobile phones?
+186,Compare the duty and restriction status of mobile phones against related items in the same tariff section.
+187,Why might mobile phones require the compliance notes listed in the tariff reference?
+188,What is the import duty for electronic integrated circuits (HS code 8542.31)?
+189,What special notes or requirements apply to electronic integrated circuits?
+190,Compare the duty and restriction status of electronic integrated circuits against related items in the same tariff section.
+191,Why might electronic integrated circuits require the compliance notes listed in the tariff reference?
+192,What is the import duty for electric conductors and cables (HS code 8544.42)?
+193,What special notes or requirements apply to electric conductors and cables?
+194,Compare the duty and restriction status of electric conductors and cables against related items in the same tariff section.
+195,Why might electric conductors and cables require the compliance notes listed in the tariff reference?
+196,What is the import duty for TV cameras and webcams (HS code 8525.80)?
+197,What special notes or requirements apply to TV cameras and webcams?
+198,Compare the duty and restriction status of TV cameras and webcams against related items in the same tariff section.
+199,Why might TV cameras and webcams require the compliance notes listed in the tariff reference?
+200,What is the import duty for flash memory / SSDs (HS code 8523.49)?
+201,What special notes or requirements apply to flash memory / SSDs?
+202,Compare the duty and restriction status of flash memory / SSDs against related items in the same tariff section.
+203,Why might flash memory / SSDs require the compliance notes listed in the tariff reference?
+204,What is the import duty for cotton T-shirts (HS code 6109.10)?
+205,What special notes or requirements apply to cotton T-shirts?
+206,Compare the duty and restriction status of cotton T-shirts against related items in the same tariff section.
+207,Why might cotton T-shirts require the compliance notes listed in the tariff reference?
+208,What is the import duty for men's cotton trousers (HS code 6203.42)?
+209,What special notes or requirements apply to men's cotton trousers?
+210,Compare the duty and restriction status of men's cotton trousers against related items in the same tariff section.
+211,Why might men's cotton trousers require the compliance notes listed in the tariff reference?
+212,What is the import duty for woven cotton fabrics (HS code 5208.11)?
+213,What special notes or requirements apply to woven cotton fabrics?
+214,Compare the duty and restriction status of woven cotton fabrics against related items in the same tariff section.
+215,Why might woven cotton fabrics require the compliance notes listed in the tariff reference?
+216,What is the import duty for printed cotton bedlinen (HS code 6302.21)?
+217,What special notes or requirements apply to printed cotton bedlinen?
+218,Compare the duty and restriction status of printed cotton bedlinen against related items in the same tariff section.
+219,Why might printed cotton bedlinen require the compliance notes listed in the tariff reference?
+220,What is the import duty for waterproof footwear (HS code 6401.92)?
+221,What special notes or requirements apply to waterproof footwear?
+222,Compare the duty and restriction status of waterproof footwear against related items in the same tariff section.
+223,Why might waterproof footwear require the compliance notes listed in the tariff reference?
+224,What is the import duty for clothing accessories (HS code 6217.10)?
+225,What special notes or requirements apply to clothing accessories?
+226,Compare the duty and restriction status of clothing accessories against related items in the same tariff section.
+227,Why might clothing accessories require the compliance notes listed in the tariff reference?
+228,What is the import duty for retail medicaments (HS code 3004.90)?
+229,What special notes or requirements apply to retail medicaments?
+230,Compare the duty and restriction status of retail medicaments against related items in the same tariff section.
+231,Why might retail medicaments require the compliance notes listed in the tariff reference?
+232,What is the import duty for penicillin antibiotics (HS code 2941.10)?
+233,What special notes or requirements apply to penicillin antibiotics?
+234,Compare the duty and restriction status of penicillin antibiotics against related items in the same tariff section.
+235,Why might penicillin antibiotics require the compliance notes listed in the tariff reference?
+236,What is the import duty for insecticides (HS code 3808.91)?
+237,What special notes or requirements apply to insecticides?
+238,Compare the duty and restriction status of insecticides against related items in the same tariff section.
+239,Why might insecticides require the compliance notes listed in the tariff reference?
+240,What is the import duty for heterocyclic compounds (HS code 2933.59)?
+241,What special notes or requirements apply to heterocyclic compounds?
+242,Compare the duty and restriction status of heterocyclic compounds against related items in the same tariff section.
+243,Why might heterocyclic compounds require the compliance notes listed in the tariff reference?
+244,What is the import duty for lubricating preparations (HS code 3403.11)?
+245,What special notes or requirements apply to lubricating preparations?
+246,Compare the duty and restriction status of lubricating preparations against related items in the same tariff section.
+247,Why might lubricating preparations require the compliance notes listed in the tariff reference?
+248,What is the import duty for crude petroleum oils (HS code 2709.00)?
+249,What special notes or requirements apply to crude petroleum oils?
+250,Compare the duty and restriction status of crude petroleum oils against related items in the same tariff section.
+251,Why might crude petroleum oils require the compliance notes listed in the tariff reference?
+252,What is the import duty for motor vehicle body parts (HS code 8708.29)?
+253,What special notes or requirements apply to motor vehicle body parts?
+254,Compare the duty and restriction status of motor vehicle body parts against related items in the same tariff section.
+255,Why might motor vehicle body parts require the compliance notes listed in the tariff reference?
+256,What is the import duty for automobile gear boxes (HS code 8708.40)?
+257,What special notes or requirements apply to automobile gear boxes?
+258,Compare the duty and restriction status of automobile gear boxes against related items in the same tariff section.
+259,Why might automobile gear boxes require the compliance notes listed in the tariff reference?
+260,"What is the import duty for gears, gearing, and clutches (HS code 8483.40)?"
+261,"What special notes or requirements apply to gears, gearing, and clutches?"
+262,"Compare the duty and restriction status of gears, gearing, and clutches against related items in the same tariff section."
+263,"Why might gears, gearing, and clutches require the compliance notes listed in the tariff reference?"
+264,What is the import duty for fuel injection pumps (HS code 8413.30)?
+265,What special notes or requirements apply to fuel injection pumps?
+266,Compare the duty and restriction status of fuel injection pumps against related items in the same tariff section.
+267,Why might fuel injection pumps require the compliance notes listed in the tariff reference?
+268,What is the import duty for agricultural tractors (HS code 8701.91)?
+269,What special notes or requirements apply to agricultural tractors?
+270,Compare the duty and restriction status of agricultural tractors against related items in the same tariff section.
+271,Why might agricultural tractors require the compliance notes listed in the tariff reference?
+272,What is the import duty for bicycle frames and forks (HS code 8714.91)?
+273,What special notes or requirements apply to bicycle frames and forks?
+274,Compare the duty and restriction status of bicycle frames and forks against related items in the same tariff section.
+275,Why might bicycle frames and forks require the compliance notes listed in the tariff reference?
+276,What is the import duty for non-durum wheat (HS code 1001.99)?
+277,What special notes or requirements apply to non-durum wheat?
+278,Compare the duty and restriction status of non-durum wheat against related items in the same tariff section.
+279,Why might non-durum wheat require the compliance notes listed in the tariff reference?
+280,What is the import duty for semi-milled/milled rice (HS code 1006.30)?
+281,What special notes or requirements apply to semi-milled/milled rice?
+282,Compare the duty and restriction status of semi-milled/milled rice against related items in the same tariff section.
+283,Why might semi-milled/milled rice require the compliance notes listed in the tariff reference?
+284,What is the import duty for unroasted coffee (HS code 0901.11)?
+285,What special notes or requirements apply to unroasted coffee?
+286,Compare the duty and restriction status of unroasted coffee against related items in the same tariff section.
+287,Why might unroasted coffee require the compliance notes listed in the tariff reference?
+288,What is the import duty for green tea (HS code 0902.10)?
+289,What special notes or requirements apply to green tea?
+290,Compare the duty and restriction status of green tea against related items in the same tariff section.
+291,Why might green tea require the compliance notes listed in the tariff reference?
+292,What is the import duty for food preparations (HS code 2106.90)?
+293,What special notes or requirements apply to food preparations?
+294,Compare the duty and restriction status of food preparations against related items in the same tariff section.
+295,Why might food preparations require the compliance notes listed in the tariff reference?
+296,What is the import duty for frozen shrimps and prawns (HS code 0306.17)?
+297,What special notes or requirements apply to frozen shrimps and prawns?
+298,Compare the duty and restriction status of frozen shrimps and prawns against related items in the same tariff section.
+299,Why might frozen shrimps and prawns require the compliance notes listed in the tariff reference?
+300,Does delay reason code DLY-01 (traffic congestion / road delay) pause the SLA clock?
+301,"If a Platinum shipment is delayed under reason code DLY-01 (traffic congestion / road delay), what compensation and SLA impact apply together?"
+302,Does delay reason code DLY-02 (port congestion) pause the SLA clock?
+303,"If a Platinum shipment is delayed under reason code DLY-02 (port congestion), what compensation and SLA impact apply together?"
+304,Does delay reason code DLY-03 (carrier capacity shortage) pause the SLA clock?
+305,"If a Platinum shipment is delayed under reason code DLY-03 (carrier capacity shortage), what compensation and SLA impact apply together?"
+306,Does delay reason code DLY-04 (severe declared weather) pause the SLA clock?
+307,"If a Platinum shipment is delayed under reason code DLY-04 (severe declared weather), what compensation and SLA impact apply together?"
+308,Does delay reason code DLY-05 (minor weather) pause the SLA clock?
+309,"If a Platinum shipment is delayed under reason code DLY-05 (minor weather), what compensation and SLA impact apply together?"
+310,Does delay reason code DLY-06 (customs hold due to incomplete documentation) pause the SLA clock?
+311,"If a Platinum shipment is delayed under reason code DLY-06 (customs hold due to incomplete documentation), what compensation and SLA impact apply together?"
+312,Does delay reason code DLY-07 (customs hold due to inspection) pause the SLA clock?
+313,"If a Platinum shipment is delayed under reason code DLY-07 (customs hold due to inspection), what compensation and SLA impact apply together?"
+314,Does delay reason code DLY-08 (strike or labour action) pause the SLA clock?
+315,"If a Platinum shipment is delayed under reason code DLY-08 (strike or labour action), what compensation and SLA impact apply together?"
+316,Does delay reason code DLY-09 (carrier vehicle mechanical failure) pause the SLA clock?
+317,"If a Platinum shipment is delayed under reason code DLY-09 (carrier vehicle mechanical failure), what compensation and SLA impact apply together?"
+318,Does delay reason code DLY-10 (airline cancellation (carrier fault)) pause the SLA clock?
+319,"If a Platinum shipment is delayed under reason code DLY-10 (airline cancellation (carrier fault)), what compensation and SLA impact apply together?"
+320,Does delay reason code DLY-11 (airline cancellation (weather/ATC)) pause the SLA clock?
+321,"If a Platinum shipment is delayed under reason code DLY-11 (airline cancellation (weather/ATC)), what compensation and SLA impact apply together?"
+322,Does delay reason code DLY-12 (public holiday at destination) pause the SLA clock?
+323,"If a Platinum shipment is delayed under reason code DLY-12 (public holiday at destination), what compensation and SLA impact apply together?"
+324,Does delay reason code DLY-13 (address or delivery issue) pause the SLA clock?
+325,"If a Platinum shipment is delayed under reason code DLY-13 (address or delivery issue), what compensation and SLA impact apply together?"
+326,Does delay reason code DLY-14 (recipient unavailable) pause the SLA clock?
+327,"If a Platinum shipment is delayed under reason code DLY-14 (recipient unavailable), what compensation and SLA impact apply together?"
+328,Does delay reason code DLY-15 (standard security screening) pause the SLA clock?
+329,"If a Platinum shipment is delayed under reason code DLY-15 (standard security screening), what compensation and SLA impact apply together?"
+330,Does delay reason code DLY-16 (carrier system/IT outage) pause the SLA clock?
+331,"If a Platinum shipment is delayed under reason code DLY-16 (carrier system/IT outage), what compensation and SLA impact apply together?"
+332,Does delay reason code DLY-17 (declared force majeure) pause the SLA clock?
+333,"If a Platinum shipment is delayed under reason code DLY-17 (declared force majeure), what compensation and SLA impact apply together?"
+334,Does delay reason code DLY-18 (regulatory embargo) pause the SLA clock?
+335,"If a Platinum shipment is delayed under reason code DLY-18 (regulatory embargo), what compensation and SLA impact apply together?"
+336,What does the internship report say about Poetry and Python environment management?
+337,Explain Poetry and Python environment management as described in Roshan's internship report.
+338,What does the internship report say about FastAPI dependency injection?
+339,How does FastAPI dependency injection connect to another concept elsewhere in the report?
+340,What does the internship report say about PostgreSQL connectivity with FastAPI?
+341,Explain PostgreSQL connectivity with FastAPI as described in Roshan's internship report.
+342,What does the internship report say about SQL relationship types and junction tables?
+343,How does SQL relationship types and junction tables connect to another concept elsewhere in the report?
+344,What does the internship report say about ACID properties?
+345,Explain ACID properties as described in Roshan's internship report.
+346,What does the internship report say about third normal form (3NF) normalisation?
+347,How does third normal form (3NF) normalisation connect to another concept elsewhere in the report?
+348,What does the internship report say about OLTP versus OLAP workloads?
+349,Explain OLTP versus OLAP workloads as described in Roshan's internship report.
+350,What does the internship report say about fact and dimension tables?
+351,How does fact and dimension tables connect to another concept elsewhere in the report?
+352,What does the internship report say about star versus snowflake schema?
+353,Explain star versus snowflake schema as described in Roshan's internship report.
+354,What does the internship report say about ETL versus ELT pipelines?
+355,How does ETL versus ELT pipelines connect to another concept elsewhere in the report?
+356,What does the internship report say about the LangChain Document class and loaders?
+357,Explain the LangChain Document class and loaders as described in Roshan's internship report.
+358,What does the internship report say about text splitting strategies in LangChain?
+359,How does text splitting strategies in LangChain connect to another concept elsewhere in the report?
+360,What does the internship report say about chunking and indexing in vectorstores?
+361,Explain chunking and indexing in vectorstores as described in Roshan's internship report.
+362,What does the internship report say about embedding model choices?
+363,How does embedding model choices connect to another concept elsewhere in the report?
+364,What does the internship report say about top-k similarity search and advanced retrieval?
+365,Explain top-k similarity search and advanced retrieval as described in Roshan's internship report.
+366,What does the internship report say about structured output via with_structured_output?
+367,How does structured output via with_structured_output connect to another concept elsewhere in the report?
+368,What does the internship report say about the Book Store Management System project?
+369,Explain the Book Store Management System project as described in Roshan's internship report.
+370,What does the internship report say about hybrid retrieval and re-ranking?
+371,How does hybrid retrieval and re-ranking connect to another concept elsewhere in the report?
+372,What does the internship report say about RAGAS evaluation metrics?
+373,Explain RAGAS evaluation metrics as described in Roshan's internship report.
+374,What does the internship report say about LangSmith observability?
+375,How does LangSmith observability connect to another concept elsewhere in the report?
+376,What does the internship report say about authentication versus authorization?
+377,Explain authentication versus authorization as described in Roshan's internship report.
+378,"What does the internship report say about OAuth2, JWT, and scopes?"
+379,"How does OAuth2, JWT, and scopes connect to another concept elsewhere in the report?"
+380,What does the internship report say about the AI Resume Analyzer's hybrid retrieval strategy?
+381,Explain the AI Resume Analyzer's hybrid retrieval strategy as described in Roshan's internship report.
+382,What does the internship report say about prompt engineering and analysis modes in the resume analyzer?
+383,How does prompt engineering and analysis modes in the resume analyzer connect to another concept elsewhere in the report?
+384,What does the internship report say about why multi-agent systems are needed?
+385,Explain why multi-agent systems are needed as described in Roshan's internship report.
+386,What does the internship report say about the Model Context Protocol (MCP)?
+387,How does the Model Context Protocol (MCP) connect to another concept elsewhere in the report?
+388,What does the internship report say about APIs versus MCPs?
+389,Explain APIs versus MCPs as described in Roshan's internship report.
+390,"What does the internship report say about LangGraph state, nodes, and edges?"
+391,"How does LangGraph state, nodes, and edges connect to another concept elsewhere in the report?"
+392,What does the internship report say about ReAct loops in LangGraph?
+393,Explain ReAct loops in LangGraph as described in Roshan's internship report.
+394,What does the internship report say about the AI Personal Research Workspace architecture?
+395,How does the AI Personal Research Workspace architecture connect to another concept elsewhere in the report?
+396,What does the internship report say about multi-agent and MCP integration?
+397,Explain multi-agent and MCP integration as described in Roshan's internship report.
+398,What does the internship report say about technical learnings from the internship?
+399,How does technical learnings from the internship connect to another concept elsewhere in the report?
+400,What does the internship report say about soft skills gained during the internship?
+401,Explain soft skills gained during the internship as described in Roshan's internship report.
+402,What does the internship report say about challenges faced during the internship?
+403,How does challenges faced during the internship connect to another concept elsewhere in the report?
+404,What does the internship report say about Gemini free-tier rate limit issues?
+405,Explain Gemini free-tier rate limit issues as described in Roshan's internship report.
+406,What does Roshan's resume say about the Self-Adaptive RAG Pipeline project?
+407,Compare the Self-Adaptive RAG Pipeline project with a similar project on Roshan's earlier resume.
+408,What does Roshan's resume say about the Demand Forecasting & Inventory Priority Ranking System?
+409,Why might the Demand Forecasting & Inventory Priority Ranking System be relevant to a recruiter evaluating Roshan for an AI/ML role?
+410,What does Roshan's resume say about the AI-Powered Candidate Ranking hackathon project?
+411,Compare the AI-Powered Candidate Ranking hackathon project with a similar project on Roshan's earlier resume.
+412,What does Roshan's resume say about the AI-Powered ATS Resume Analyzer project?
+413,Why might the AI-Powered ATS Resume Analyzer project be relevant to a recruiter evaluating Roshan for an AI/ML role?
+414,What does Roshan's resume say about the Enterprise RAG Assistant project?
+415,Compare the Enterprise RAG Assistant project with a similar project on Roshan's earlier resume.
+416,What does Roshan's resume say about the Sentiment Analysis System project?
+417,Why might the Sentiment Analysis System project be relevant to a recruiter evaluating Roshan for an AI/ML role?
+418,What does Roshan's resume say about the Banking Risk Assessment ML project?
+419,Compare the Banking Risk Assessment ML project with a similar project on Roshan's earlier resume.
+420,What does Roshan's resume say about Roshan's technical skills?
+421,Why might Roshan's technical skills be relevant to a recruiter evaluating Roshan for an AI/ML role?
+422,What does Roshan's resume say about Roshan's positions of responsibility?
+423,Compare Roshan's positions of responsibility with a similar project on Roshan's earlier resume.
+424,What does Roshan's resume say about Roshan's achievements?
+425,Why might Roshan's achievements be relevant to a recruiter evaluating Roshan for an AI/ML role?
+426,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code?
+427,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply?"
+428,Compare how customs delays are treated in the SLA versus the dedicated delay policy.
+429,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules?
+430,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment.
+431,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript?
+432,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned.
+433,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training?
+434,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project.
+435,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data?"
+436,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 2)
+437,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 2)"
+438,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 2)
+439,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 2)
+440,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 2)
+441,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript? (variant 2)
+442,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned. (variant 2)
+443,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training? (variant 2)
+444,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project. (variant 2)
+445,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data? (variant 2)"
+446,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 3)
+447,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 3)"
+448,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 3)
+449,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 3)
+450,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 3)
+451,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript? (variant 3)
+452,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned. (variant 3)
+453,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training? (variant 3)
+454,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project. (variant 3)
+455,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data? (variant 3)"
+456,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 4)
+457,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 4)"
+458,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 4)
+459,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 4)
+460,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 4)
+461,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript? (variant 4)
+462,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned. (variant 4)
+463,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training? (variant 4)
+464,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project. (variant 4)
+465,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data? (variant 4)"
+466,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 5)
+467,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 5)"
+468,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 5)
+469,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 5)
+470,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 5)
+471,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript? (variant 5)
+472,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned. (variant 5)
+473,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training? (variant 5)
+474,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project. (variant 5)
+475,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data? (variant 5)"
+476,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 6)
+477,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 6)"
+478,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 6)
+479,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 6)
+480,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 6)
+481,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript? (variant 6)
+482,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned. (variant 6)
+483,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training? (variant 6)
+484,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project. (variant 6)
+485,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data? (variant 6)"
+486,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 7)
+487,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 7)"
+488,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 7)
+489,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 7)
+490,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 7)
+491,How does Roshan's internship experience with hybrid retrieval compare to the multi-pipeline RAG router design in his chat transcript? (variant 7)
+492,Compare the retrieval strategies Roshan used in his internship projects with the 5-pipeline router design he later planned. (variant 7)
+493,Why does Roshan's chat transcript recommend automatic query generation over manual question writing for router training? (variant 7)
+494,Summarize the entire synthetic-query-generation and router-training workflow Roshan discussed for his self-learning RAG project. (variant 7)
+495,"What is the experience-dataset schema Roshan proposed for storing query, pipeline, and feedback data? (variant 7)"
+496,How does the SLA's Force Majeure clause differ in scope from the delay policy's force majeure reason code? (variant 8)
+497,"If a hazmat shipment under HS code 3601.00 is queued for a Platinum route, what customs and SLA constraints both apply? (variant 8)"
+498,Compare how customs delays are treated in the SLA versus the dedicated delay policy. (variant 8)
+499,Why would a shipper with medicaments (HS 3004.90) prefer Platinum tier given the delay policy's medical supplies rules? (variant 8)
+500,Summarize how the tariff reference and SLA together determine total delivery time for an international electronics shipment. (variant 8)
