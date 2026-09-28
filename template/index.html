@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Chat</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 14px;
+    }
+    .sidebar {
+      width: 220px;
+      min-width: 220px;
+      background: #161b22;
+      border-right: 1px solid #21262d;
+      display: flex;
+      flex-direction: column;
+      padding: 16px 12px;
+      gap: 8px;
+    }
+    .assistant-wrapper {
+    align-self: flex-start;
+    max-width: 760px;
+}
+
+.assistant-wrapper .message {
+    max-width: 760px;
+}
+
+.feedback {
+    margin-top: 6px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback button {
+    background: transparent;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.feedback button:hover {
+    background: #21262d;
+    color: #e6edf3;
+}
+    .sidebar h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      padding: 0 4px 8px;
+      border-bottom: 1px solid #21262d;
+    }
+    .sidebar form.new-session button {
+      width: 100%;
+      padding: 8px 10px;
+      background: #238636;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background .15s;
+    }
+    .sidebar form.new-session button:hover { background: #2ea043; }
+    .session-list { display: flex; flex-direction: column; gap: 4px; }
+
+    .session-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: background .1s;
+    }
+    .session-item:hover { background: #21262d; }
+    .session-item.active { background: #1f3c5a; }
+
+    .session-item a {
+      flex: 1;
+      padding: 8px 10px;
+      color: #e6edf3;
+      text-decoration: none;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .session-item form.delete-session {
+      display: flex;
+      align-items: center;
+    }
+    .session-item form.delete-session button {
+      background: none;
+      border: none;
+      color: #6e7681;
+      cursor: pointer;
+      padding: 6px 8px;
+      font-size: 15px;
+      line-height: 1;
+      border-radius: 4px;
+      transition: color .1s, background .1s;
+    }
+    .session-item form.delete-session button:hover {
+      color: #f85149;
+      background: rgba(248, 81, 73, 0.1);
+    }
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .message {
+      max-width: 760px;
+      padding: 12px 16px;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+    .message.user {
+      background: #21262d;
+      border: 1px solid #30363d;
+      align-self: flex-end;
+    }
+    .message.assistant {
+      background: #1c2a3a;
+      border: 1px solid #1f3c5a;
+      align-self: flex-start;
+    }
+
+    .empty-state {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #484f58;
+      font-size: 15px;
+    }
+    .input-bar {
+      padding: 16px 32px;
+      background: #0d1117;
+      border-top: 1px solid #21262d;
+    }
+    .input-bar form {
+      display: flex;
+      gap: 10px;
+    }
+
+    .input-bar input[type="text"] {
+      flex: 1;
+      padding: 10px 16px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      color: #e6edf3;
+      font-size: 14px;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .input-bar input[type="text"]:focus { border-color: #388bfd; }
+    .input-bar input[type="text"]::placeholder { color: #484f58; }
+
+    .input-bar button {
+      padding: 10px 22px;
+      background: #388bfd;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background .15s;
+    }
+    .input-bar button:hover { background: #58a6ff; }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>History</h2>
+    <form class="new-session" action="/sessions/new" method="post">
+      <button type="submit">+ New Session</button>
+    </form>
+    <div class="session-list">
+      {% for session in sessions %}
+      <div class="session-item {% if session.id == current_session_id %}active{% endif %}">
+        <a href="/?session_id={{ session.id }}">{{ session.name }}</a>
+        <form class="delete-session"
+              action="/sessions/{{ session.id }}/delete"
+              method="post"
+              onsubmit="return confirm('Delete {{ session.name }}?')">
+          <button type="submit" title="Delete session">✕</button>
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+  </aside>
+  <div class="main">
+
+    <div class="messages" id="messages">
+      {% if messages %}
+{% for msg in messages %}
+
+    {% if msg.role == "user" %}
+
+        <div class="message user">
+            {{ msg.content }}
+        </div>
+
+    {% else %}
+
+        <div class="assistant-wrapper">
+
+            <div class="message assistant">
+                {{ msg.content }}
+            </div>
+
+            {% if msg.experience_id %}
+
+            <div class="feedback">
+
+                <form
+                    action="/feedback"
+                    method="post"
+                    style="display:inline;"
+                >
+
+                    <input
+                        type="hidden"
+                        name="experience_id"
+                        value="{{ msg.experience_id }}"
+                    >
+
+                    <button
+                        type="submit"
+                        name="feedback"
+                        value="positive"
+                        title="Good answer"
+                    >
+                        👍
+                    </button>
+
+                </form>
+
+                <form
+                    action="/feedback"
+                    method="post"
+                    style="display:inline;"
+                >
+
+                    <input
+                        type="hidden"
+                        name="experience_id"
+                        value="{{ msg.experience_id }}"
+                    >
+
+                    <button
+                        type="submit"
+                        name="feedback"
+                        value="negative"
+                        title="Bad answer"
+                    >
+                        👎
+                    </button>
+
+                </form>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    {% endif %}
+
+{% endfor %}
+      {% else %}
+        <div class="empty-state">Ask anything to start the conversation…</div>
+      {% endif %}
+    </div>
+    <div class="input-bar">
+      <form action="/" method="post">
+        <input type="hidden" name="session_id" value="{{ current_session_id }}" />
+        <input type="text" name="question" placeholder="Ask anything…" autocomplete="off" autofocus />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    const msgs = document.getElementById('messages');
+    msgs.scrollTop = msgs.scrollHeight;
+  </script>
+</body>
+</html>
 
